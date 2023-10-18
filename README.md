@@ -11,7 +11,7 @@ cd autondance-upload
 
 Poppins : "@expo-google-fonts/poppins": "^0.2.3"
 ```bash
- npx expo install @expo-google-fonts/poppins
+npx expo install @expo-google-fonts/poppins
 ```
 Expo-font : "expo-font": "~11.4.0"
 ```bash
