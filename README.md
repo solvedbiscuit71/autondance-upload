@@ -34,7 +34,7 @@ React-Native-Svg : "react-native-svg": "13.9.0"
 npx expo install expo-react-native-svg
 ```
 
-#Run the App
+# Run the App
 You can run the build in an expo account,provided the device has the expo app in it, using the following command
 ```bash
 npx expo start
