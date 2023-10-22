@@ -47,7 +47,7 @@ const Upload = ({ image, changePath, imageName, setImage, setImageName }) => {
                 "User-Agent": "autodance_upload/1.0.0",
             },
         };
-        const res = await fetch("http://11.12.8.248:8000/upload", options)
+        const res = await fetch(`${process.env.EXPO_PUBLIC_API_URL}/upload`, options)
         const data = await res.json();
         if (res.status == 200) {
             setImage("");
