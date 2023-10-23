@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState } from "react";
 import { Text, View, StyleSheet, Pressable, Image } from "react-native";
 
 import Svg, { Path } from "react-native-svg";
@@ -31,7 +31,11 @@ const UploadIcon = () => {
 
 
 const Upload = ({ image, changePath, imageName, setImage, setImageName }) => {
+    const [mutex, setMutex] = useState(true);
+
     const uploadImage = async () => {
+        setMutex(false);
+
         const formData = new FormData();
         formData.append("file", {
             uri: image,
@@ -56,7 +60,10 @@ const Upload = ({ image, changePath, imageName, setImage, setImageName }) => {
         } else {
             console.log(data);
         }
+
+        setMutex(true);
     };
+
     return (
         <View style={styles.container}>
             <View style={styles.buttonContainer}>
@@ -66,7 +73,7 @@ const Upload = ({ image, changePath, imageName, setImage, setImageName }) => {
                         Back
                     </Text>
                 </Pressable>
-                <Pressable style={styles.upload} onPress={uploadImage}>
+                <Pressable style={styles.upload} onPress={() => mutex && uploadImage()}>
                     <Text style={{ fontFamily: "Poppins_700Bold", marginRight: 5, color: "#147EFB", fontSize: 18 }} >
                         Upload
                     </Text>
