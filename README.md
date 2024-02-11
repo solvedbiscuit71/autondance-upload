@@ -19,9 +19,6 @@ In the root of the project create a file named `.env.local` and set the api endp
 ```env
 EXPO_PUBLIC_API_URL=http://<ip_address>:<port>
 ```
-# Otpt
-
-![Screenshot_2023-10-24-17-03-13-614_host exp exponent](https://github.com/sankar589/autondance-upload/assets/119640217/5dc78f21-9ec4-4573-8fd2-b5b5db563a10)
 
 # Run the App
 
@@ -29,3 +26,9 @@ You can run the build in an expo account,provided the device has the expo app in
 ```bash
 npx expo start
 ```
+
+
+# Output
+
+![IMG_20240211_104303](https://github.com/sankar589/autondance-upload/assets/119640217/2b714317-d791-4ac1-a1c4-c56a97e6b672)
+
