@@ -19,6 +19,9 @@ In the root of the project create a file named `.env.local` and set the api endp
 ```env
 EXPO_PUBLIC_API_URL=http://<ip_address>:<port>
 ```
+# Otpt
+
+![Screenshot_2023-10-24-17-03-13-614_host exp exponent](https://github.com/sankar589/autondance-upload/assets/119640217/5dc78f21-9ec4-4573-8fd2-b5b5db563a10)
 
 # Run the App
 
